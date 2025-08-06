@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Thông tin cá nhân</legend>
+      <label for="fullname">Họ tên:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Giới tính & Sở thích</legend>
+
+      <label>Giới tính:</label>
+      <input type="radio" name="gender" value="Nam" id="nam"><label for="nam">Nam</label>
+      <input type="radio" name="gender" value="Nữ" id="nu"><label for="nu">Nữ</label>
+
+      <label>Sở thích:</label>
+      <input type="checkbox" name="hobby" value="Đọc sách" id="doc-sach"><label for="doc-sach">Đọc sách</label>
+      <input type="checkbox" name="hobby" value="Du lịch" id="du-lich"><label for="du-lich">Du lịch</label>
+      <input type="checkbox" name="hobby" value="Thể thao" id="the-thao"><label for="the-thao">Thể thao</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Thông tin bổ sung</legend>
+
+      <label for="nationality">Quốc tịch:</label>
+      <select id="nationality" name="nationality">
+        <option value="">--Chọn quốc tịch--</option>
+        <option value="VN">Việt Nam</option>
+        <option value="USA">Hoa Kỳ</option>
+        <option value="JP">Nhật Bản</option>
+        <option value="KR">Hàn Quốc</option>
+      </select>
+
+      <label for="about">Giới thiệu bản thân:</label>
+      <textarea id="about" name="about" rows="4"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Đăng ký">
+  </form>
+
+</body>
+</html>

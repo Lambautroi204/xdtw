@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      position: relative;
+    }
+    .header .list {
+      position: absolute;
+      background-color: orangered;
+    }
+    .list .left {
+      display: inline-block;
+      padding: 10px;
+    }
+    .right {
+      display: inline-block;
+      right: 0;
+      padding: 10px;
+    }
+    .list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: white;
+      font-variant: small-caps;
+    }
+    .fpt{
+        position: absolute;
+        font-size: 30px;
+        font-variant: small-caps;
+        color: orangered;
+        bottom: 105px;
+        left: 25px;
+    }
+    .top{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: orangered;
+      padding: 15px;
+      font-variant: small-caps;
+      color: #fff;
+      border-radius: 0 0 0 15px;
+    }
+    .topright{
+      display: inline-block;
+      padding-left: 15px;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <img class="img" src="/img/logo.png" alt="" />
+      <div class="list">
+        <div>
+          <li class="left">Trang chu</li>
+          <li class="left">Gioi thieu</li>
+          <li class="left">Lien he</li>
+          <li class="left">Gop y</li>
+          <li class="left">Hoi dap</li>
+          <li class="left">San pham</li>
+        </div>
+        <div class="hh">
+          <li class="right">English</li>
+          <li class="right">Tieng viet</li>
+        </div>
+      </div>
+      <div class="fpt">
+        <h2>FPT Polytechnic</h2>  
+        <hr>
+        <p>Thuc hoc - Thuc nghiep</p>
+    </div>
+    <div class="top">
+        <li class="topright">Dang ky</li>
+        <li class="topright">Dang nhap</li>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trường THPT Yên Lãng</title>
+  <!-- Link đến CSS của bạn -->
+  <link rel="stylesheet" href="/CODE/Assignment 2/ass2.css" />
+  <!-- Thêm icon font nếu chưa có -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.1/css/font-awesome.min.css" />
+  <!-- <style>
+    /* Có thể chỉnh sửa các style này hoặc bỏ ra ngoài file CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header,
+    footer {
+      width: 100%;
+    }
+
+    .header-top {
+      background: #f0f0f0;
+      padding: 10px 0;
+    }
+
+    .logo-img {
+      display: block;
+      margin: 0 auto;
+      max-width: 200px;
+    }
+
+    .social-icons a {
+      margin: 0 5px;
+      color: #333;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .top-slider {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .slide-left {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .menuu {
+      background-color: lightcyan;
+      padding: 10px 0;
+    }
+
+    .menuu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menuu li {
+      margin: 0 15px;
+    }
+
+    .menuu a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* Các phần nội dung khác có thể tùy chỉnh thêm */
+    /*...*/
+    footer {
+      margin-top: 20px;
+    }
+  </style> -->
+  <link rel="stylesheet" href="/Assignment 2/pages/ass2.css">
+</head>
+
+<body>
+
+  <!-- Header gồm logo và mạng xã hội -->
+  <header class="header-top">
+    <div style="width:100%; overflow:hidden;">
+      <img src="326807259_908198843696434_6814093961891213447_n.png" style="width:100%; height:auto; display:block;">
+    </div>
+    <div class="top-slider">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/SuploTeam/" target="_blank" title="Facebook"><i class="fa fa-facebook"
+            aria-hidden="true"></i></a>
+        <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"
+            aria-hidden="true"></i></a>
+        <a href="https://plus.google.com/" target="_blank" title="Google Plus"><i class="fa fa-google-plus"
+            aria-hidden="true"></i></a>
+        <a href="https://vn.linkedin.com/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"
+            aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" title="YouTube"><i class="fa fa-youtube-play"
+            aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"
+            aria-hidden="true"></i></a>
+      </div>
+      <div class="slide-left">
+        <marquee behavior="scroll" direction="left" style="color: red; margin-top: 10px;">CHÀO MỪNG BẠN ĐẾN VỚI WEBSITE
+          TRƯỜNG THPT YÊN LÃNG</marquee>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu chính -->
+  <nav class="menuu" style="background-color: #4ea1ff">
+    <ul style="list-style: none; display: flex; justify-content: center; padding: 10px 0; margin: 0;">
+      <li style="margin: 0 10px; position: relative;">
+        <a href="/Assignment 2/Untitled-1.html">Trang chủ</a>
+      </li>
+      <li style="margin: 0 10px; position: relative;">
+        <a href="#">Giới thiệu <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        <ul style="position: absolute; top: 100%; left: 0; background: #fff; display: none; padding: 0; margin: 0; list-style: none; min-width: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <li style="padding: 8px;"><a href="/pages/gioi-thieu-chung">Giới thiệu chung</a></li>
+          <li style="padding: 8px;"><a href="/pages/to-chuc">Tổ chức</a></li>
+        </ul>
+      </li>
+      <li style="margin: 0 10px; position: relative;">
+        <a href="#">Tuyển sinh</a>
+      </li>
+      <li style="margin: 0 10px; position: relative;">
+        <a href="/Assignment 2/pages/gioi-thieu-chung.html">Liên hệ</a>
+      </li>
+      <li style="margin: 0 10px; position: relative;">
+        <a href="#">Hỏi & đáp</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nội dung chính -->
+<main style="padding: 20px; max-width:1200px; margin:auto;">
+  <section id="tuyen-sinh">
+    <h2 style="text-align:left;">Thông tin Tuyển sinh năm học 2025–2026</h2>
+    
+    <p>Trường THPT Yên Lãng thông báo tuyển sinh lớp 10 năm học 2025–2026 như sau:</p>
+    
+    <ul>
+      <li><strong>Chỉ tiêu tuyển sinh:</strong> 12 lớp với tổng số 480 học sinh</li>
+      <li><strong>Đối tượng:</strong> Học sinh tốt nghiệp THCS trên địa bàn Huyện Mê Linh và các khu vực lân cận</li>
+      <li><strong>Hình thức tuyển sinh:</strong> Xét tuyển theo điểm thi lớp 9 và học bạ THCS</li>
+      <li><strong>Hồ sơ bao gồm:</strong> Phiếu đăng ký dự tuyển, bản sao giấy khai sinh, học bạ THCS, giấy chứng nhận tốt nghiệp</li>
+      <li><strong>Thời gian nhận hồ sơ:</strong> Từ ngày 15/06 đến 30/06/2025</li>
+    </ul>
+
+    <div style="margin-top: 30px;">
+      <h3 style="color: #d00000;">Các ngành học nổi bật:</h3>
+      <ul>
+        <li>Khối Khoa học Tự nhiên (Toán, Lý, Hóa)</li>
+        <li>Khối Khoa học Xã hội (Văn, Sử, Địa)</li>
+        <li>Khối Ngoại ngữ – Tin học (Anh văn, Tin học ứng dụng)</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:20px;">📞 Mọi thắc mắc xin vui lòng liên hệ Văn phòng Trường hoặc gọi số: <strong>024 3816 4331</strong></p>
+  </section>
+</main>
+
+
+  <!-- Footer -->
+  <footer
+    style="border-top: 5px double orangered; line-height: 50px; background-color: bisque; text-align: center; font-variant: small-caps; color: #000;">
+    Trường THPT Yên Lãng © 2017. All rights reserved.
+  </footer>
+
+</body>
+
+</html>

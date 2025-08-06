@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+/* Khi gọi class selector cần thêm dấu . trước tên của class */
+.cl1{
+    color: red;
+    font-size: 20px;
+}
+.cl2{
+    color:blue;
+    font-size: 20px;
+}
+.cl3{
+    color: green;
+    font-size: 20px;
+}

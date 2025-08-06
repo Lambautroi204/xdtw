@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Nộp Bài</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f2f2f2;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="file"],
+    input[list] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form method="post" enctype="multipart/form-data">
+    <h2 style="text-align:center;">Form Nộp Bài</h2>
+
+    <label for="student-name">Họ tên:</label>
+    <input type="text" id="student-name" name="student-name" required>
+
+    <label for="subject">Môn học:</label>
+    <input list="subjects" id="subject" name="subject" required>
+    <datalist id="subjects">
+      <option value="Toán">
+      <option value="Vật lý">
+      <option value="Hóa học">
+      <option value="Ngữ văn">
+      <option value="Tin học">
+    </datalist>
+
+    <label for="date-submit">Ngày nộp:</label>
+    <input type="date" id="date-submit" name="date-submit" required>
+
+    <label for="file-upload">File bài làm:</label>
+    <input type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx,.zip" required>
+
+    <input type="submit" value="Gửi bài">
+  </form>
+
+</body>
+</html>

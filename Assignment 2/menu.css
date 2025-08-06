@@ -1,0 +1,113 @@
+.menu>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu>ul>li>a {
+    display: block;
+}
+
+.menu>ul {
+    padding: 0 pixel;
+    margin: 0 pixel;
+    list-style: none;
+    border-radius: 3 pixel;
+    background-color: orangered;
+    text-align: center;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 0 10 pixel;
+    line-height: 40 pixel;
+}
+
+.menu>ul>li>a:hover {
+    color: yellow;
+}
+
+.menu>ul>li {
+    position: relative;
+}
+
+.menu>ul>ul {
+    position: absolute;
+    display: none;
+}
+
+.menu>ul>ul>a {
+    display: block;
+}
+
+.menu>ul>li:hover>ul {
+    display: block;
+}
+
+.menu>ul>ul {
+    padding: 0 pixel;
+    margin: 0 pixel;
+    list-style: none;
+    border-radius: 3 pixel;
+    width: 200 pixel;
+    background-color: white;
+    box-shadow: 0 0 1 pixel gray;
+}
+
+.menu ul>ul>a {
+    line-height: 30 pixel;
+    color: orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 10 pixel;
+}
+
+.menu>ul>ul>a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.box {
+    position: absolute;
+    background: white;
+    list-style: none;
+    width: 62px;
+    padding-left: 0px;
+    display: none;
+    box-shadow: 0 0 2px white;
+}
+
+.vmenu {
+    list-style: none;
+    float: right;
+    padding: 0px;
+    margin: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px white;
+}
+
+.vmenu a {
+    background-color: yellow;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: yellow;
+    font-variant: small-caps;
+    font-size: large;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+
+.vmenu a:hover {
+    background: url('bullet.png') no-repeat 10px center;
+    border-bottom: 1px dotted white;
+    background-color: yellow;
+    color: white;
+    font-weight: bold;
+}
+.menu .box a:hover{
+    background-color:yellow;
+    display: block;
+}

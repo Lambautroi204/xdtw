@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+</head>
+<body>
+  <h2>Đăng ký</h2>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <!-- Họ và tên -->
+    <label for="fullname">Họ và tên:</label><br>
+    <input type="text" id="fullname" name="fullname"><br><br>
+
+    <!-- Giới tính -->
+    <label>Giới tính:</label><br>
+    <input type="radio" id="male" name="gender" value="Nam">
+    <label for="male">Nam</label>
+    <input type="radio" id="female" name="gender" value="Nữ">
+    <label for="female">Nữ</label><br><br>
+
+    <!-- Hình ảnh -->
+    <label for="image">Hình ảnh:</label><br>
+    <input type="file" id="image" name="image"><br><br>
+
+    <!-- Quốc tịch -->
+    <label for="nationality">Quốc tịch:</label><br>
+    <select id="nationality" name="nationality">
+      <option value="us">United States</option>
+      <option value="vn">Vietnam</option>
+      <option value="jp">Japan</option>
+      <option value="kr">Korea</option>
+    </select><br><br>
+
+    <!-- Sở thích -->
+    <label>Sở thích:</label><br>
+    <input type="checkbox" id="sport" name="hobby" value="Thể thao">
+    <label for="sport">Thể thao</label>
+    <input type="checkbox" id="travel" name="hobby" value="Du lịch">
+    <label for="travel">Du lịch</label>
+    <input type="checkbox" id="music" name="hobby" value="Âm nhạc">
+    <label for="music">Âm nhạc</label>
+    <input type="checkbox" id="food" name="hobby" value="Ẩm thực">
+    <label for="food">Ẩm thực</label><br><br>
+
+    <!-- Ghi chú -->
+    <label for="note">Ghi chú:</label><br>
+    <textarea id="note" name="note" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Nút -->
+    <input type="submit" value="Đăng ký">
+    <input type="reset" value="Nhập lại">
+  </form>
+</body>
+</html>
